@@ -76,7 +76,7 @@ if not A_IsAdmin
 ; Hotkey Tips
 ^f8::
 {
-	ToolTip("Ctrl and F5 - block connection for the game`nCtrl and F6 - restore connection for the game`nCtrl and Num0 - Disable saving mode`nCtrl and Num1 - Enable/Restore saving mode`nCtrl and F8 - Display this help text", 0, 0)
+	ToolTip("Ctrl + Numpad0 - block connection for the game`nCtrl + Numpad1 - restore connection for the game`nCtrl + F9 - Disable saving mode`nCtrl + F12 - Enable/Restore saving mode`nCtrl + F8 - Display this help text", 0, 0)
     Sleep(5000)
     ToolTip(, 0, 0)
     return
