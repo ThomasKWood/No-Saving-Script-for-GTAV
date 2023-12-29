@@ -2,7 +2,7 @@
 ; Original AHK V1 script by: https://www.reddit.com/user/ElectroBytezLV/
 
 ; Enable Debugging:
-debug := false
+;#Warn  ; Enable warnings to assist with detecting common errors.
 
 Persistent ; Prevent the script from exiting automatically.
 #SingleInstance
@@ -13,12 +13,6 @@ SetWinDelay(0)
 SetControlDelay(0)
 SetTitleMatchMode(2)
 OnExit AppExit 
-
-if debug
-{
-	#Warn  ; Enable warnings to assist with detecting common errors.
-}
-
 
 ; ROCKSTAR SERVERS API IP
 rockstarIP := "192.81.241.171" ; if the ip ever changes just update this variable to the new ip
@@ -45,7 +39,7 @@ if not A_IsAdmin
 	RunWait("netsh advfirewall firewall add rule name=`"BATCH GTA 5 BLOCK`" dir=in action=block", , "hide")
 	ToolTip("NETWORK BLOCK ON", 0, 0)
 	Sleep(3000)
-	ToolTip(, 0, 0)
+	ToolTip("NETWORK BLOCK ON", 0, 0)
 	return
 }
 
