@@ -14,7 +14,7 @@ SetControlDelay(0)
 SetTitleMatchMode(2)
 OnExit AppExit 
 
-; ROCKSTAR SERVERS API IP
+; ROCKSTAR SERVERS CDN IP
 rockstarIP := "192.81.241.171" ; if the ip ever changes just update this variable to the new ip
 
 ; Admin Priv Check
